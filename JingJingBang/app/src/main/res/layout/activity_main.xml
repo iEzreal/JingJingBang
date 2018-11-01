@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_bar_gr">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_bar_gr"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/tab_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页"
+            android:textColor="@drawable/tab_text_selector" />
+
+        <RadioButton
+            android:id="@+id/tab_classroom"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_classroom_selector"
+            android:text="悬赏"
+            android:textColor="@drawable/tab_text_selector" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/tab_shop"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_shop_selector"
+            android:text="消息"
+            android:textColor="@drawable/tab_text_selector" />
+
+        <RadioButton
+            android:id="@+id/tab_mine"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_mine_selector"
+            android:text="我的"
+            android:textColor="@drawable/tab_text_selector" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/tab_controller"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/tab_controller_normal" />
+
+</RelativeLayout>

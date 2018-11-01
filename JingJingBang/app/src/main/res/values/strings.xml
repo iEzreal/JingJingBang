@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">静静帮</string>
+    <string name="title_home">首页</string>
+    <string name="title_reward">悬赏</string>
+    <string name="title_release">发布悬赏</string>
+    <string name="title_message">消息</string>
+    <string name="title_mine">我的</string>
+</resources>
